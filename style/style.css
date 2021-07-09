@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* start styling header */
+.header {
+    background: url(../images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.nav-bar svg {
+    display: none;
+}
+
+.nav-bar .logo {
+    width: 160px;
+}
+
+.nav-bar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: white;
+    font-family: Barlow;
+}
+
+.nav-bar ul li {
+    margin: 0 1.6rem;
+    cursor: pointer;
+}
+
+.nav-bar ul li:last-child {
+    color: black;
+    background-color: white;
+    padding: 1.1rem 2rem;
+    border-radius: 50px;
+    font-family: Fraunces;
+}
+
+.nav-bar ul li:last-child:hover {
+    background-color: rgb(129, 213, 255);
+    color: white;
+}
+
+.header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header div h1 {
+    color: white;
+    font-size: 45px;
+    font-family: Fraunces;
+    font-weight: 900;
+    letter-spacing: 13px;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.header div:last-child img {
+    margin: 6.5rem auto 0;
+}
+/* end styling header */
+
+
+/* start styling eag section */
+.main-content article {
+    max-width: 1903px;
+    margin: auto;
+}
+
+.main-content article .eag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content article .eag > div:last-child {
+    width: 50%;
+}
+
+.main-content article .eag div:last-child img {
+    width: 100%;
+}
+
+.main-content article .eag div:first-child {
+    padding: 8rem;
+    width: 50%;
+}
+
+.main-content article .eag div h2 {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+    font-family: Fraunces;
+}
+
+.main-content article .eag div p {
+    font-size: 18px;
+    margin-bottom: 2rem;
+    font-family: Barlow;
+    color: hsl(232, 10%, 55%);
+}
+
+.main-content article .eag div span {
+    font-family: Fraunces;
+    font-weight: 900;
+    position: relative;
+    z-index: 10;
+}
+
+.parent {
+    position: relative;
+    width: max-content;
+} 
+
+.main-content article .eag .parent::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -5%;
+    width: 110%;
+    height: 10px;
+    background-color: hsl(51, 100%, 83%);
+    border-radius: 20px;
+    z-index: 9;
+}
+
+.main-content article .eag .parent:hover::after {
+    background-color: hsl(51, 100%, 49%);
+}
+/* end styling eag section */
+
+
+/* start styling glass section */
+.main-content article .glass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content article .glass div:first-child {
+    width: 50%;
+}
+
+.main-content article .glass div:first-child img {
+    width: 100%;
+}
+
+.main-content article .glass > div:last-child {
+    padding: 8rem;
+    width: 50%;
+}
+
+.main-content article .glass div h2 {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+    font-family: Fraunces;
+}
+
+.main-content article .glass div p {
+    font-size: 19px;
+    margin-bottom: 2rem;
+    font-family: Barlow;
+    color: hsl(232, 10%, 55%);
+}
+
+.main-content article .glass div span {
+    font-family: Fraunces;
+    font-weight: 900;
+    position: relative;
+    z-index: 10;
+}
+
+.parent1 {
+    position: relative;
+    width: max-content;
+} 
+
+.main-content article .glass .parent1::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -5%;
+    width: 110%;
+    height: 10px;
+    background-color: hsl(7, 95%, 83%);
+    border-radius: 20px;
+    z-index: 9;
+}
+
+.main-content article .glass .parent1:hover::after {
+    background-color: hsl(7, 99%, 70%);
+}
+/* end styling glass section */
+
+
+/* start styling cherries orange section */
+.cherries-orange {
+    display: flex;
+    min-height: 600px;
+}
+
+.cherries-orange div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.cherries-orange p {
+    font-family: Barlow;
+    color: hsl(213, 9%, 39%);
+    width: 333px;
+    line-height: 25px;
+}
+
+.cherries-orange h2 {
+    font-family: Fraunces;    
+    color: hsl(212, 27%, 19%);
+    margin-bottom: 1.7rem;
+}
+
+.main-content article .cherries-orange div:first-child {
+    width: 50%;
+    background: url(../images/desktop/image-graphic-design.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.main-content article .cherries-orange div:last-child {
+    width: 50%;
+    background: url(../images/desktop/image-photography.jpg);
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* end styling glass cherries orange section */
+
+
+/* start styling client testimonials section */
+.client-testimonials {
+    padding: 10rem;
+}
+
+.client-testimonials .client-container {
+    display: flex;
+    justify-content: center;   
+    flex-wrap: wrap;
+}
+
+.client-testimonials .client-container div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.7rem;
+}
+
+.client-testimonials .client-container div img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+
+.client-testimonials .client-container > div > p {
+    margin-bottom: 3rem;
+}
+
+.client-testimonials .client-container div p {
+    text-align: center;
+    width: 310px;
+    line-height: 25px;
+    font-family: Barlow;
+    color: hsl(213, 9%, 39%);
+}
+
+.client-testimonials h2 {
+    text-align: center;
+    font-family: Fraunces;
+    color: hsl(232, 10%, 55%);
+    letter-spacing: 5px;
+    margin-bottom: 4rem;
+}
+
+.client-testimonials div div h3 {
+    margin-bottom: 0.5rem;
+    font-family: Fraunces;
+}
+
+.client-testimonials div div p {
+    font-family: Barlow;
+    color: hsl(210, 4%, 67%);
+}
+/* end styling client testimonials section */
+
+
+/* start styling gallery */
+.gallery div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery div img {
+    width: 25%;
+}
+/* end styling gallery */
+
+
+/* start styling gallery */
+.footer {
+    background-color: rgb(115, 187, 171);
+    color: hsl(167, 40%, 24%);
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer svg {
+    margin-bottom: 2rem;
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    font-family: Barlow;
+}
+
+.footer ul:first-of-type {
+    padding-bottom: 4rem;
+}
+
+.footer ul:first-of-type li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.footer ul:last-of-type li {
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.footer a {    
+    color: hsl(167, 40%, 24%);
+}
+
+.footer a:hover, .footer ul li:hover {
+    color: white;
+}
+/* end styling gallery */
+
+
+/* media query */
+
+@media (min-width: 1750px) {
+    .main-content article .cherries-orange div:first-child {
+        min-height: 650px;
+    }
+    
+    .main-content article .cherries-orange div:last-child {
+        min-height: 650px;
+    }
+}
+
+@media (max-width: 1384px) {
+    .client-testimonials .client-container div {
+        margin-bottom: 3rem;
+    }
+    .client-testimonials .client-container div:last-child {
+        margin-bottom: 0rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .main-content article .glass > div:last-child {
+        padding: 3rem;
+    }
+    .main-content article .eag div:first-child {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-content article .eag div h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .main-content article .eag div p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 1rem;
+    }
+    .main-content article .glass div h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .main-content article .glass div p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 1rem;
+    }
+    .main-content article .glass > div:last-child {
+        padding: 1.8rem;
+    }
+    .main-content article .eag div:first-child {
+        padding: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header div:first-child img {
+        margin: 0;
+    }
+    .nav-bar {
+        flex-direction: column;
+        position: relative;
+        margin: 0 2rem 2rem;
+        padding: 2rem 0 0 0;
+    }
+    .nav-bar svg {
+        display: block;
+        align-self: center;
+    }
+    .nav-bar div:first-child {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav-bar ul {
+        display: none;
+        padding: 1.2rem;
+        margin: 5rem auto;
+        background-color: white;
+        flex-direction: column;
+        color: hsl(213, 9%, 39%);
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+    }
+    .display-flex {
+        display: flex !important;
+    }
+    .nav-bar ul::after {
+        content: "";
+        background-color: white;
+        position: absolute;
+        right: 0;
+        top: -40px;
+        width: 50px;
+        height: 50px;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    }
+    .nav-bar ul li {
+        margin: 1rem 0;
+    }
+    .nav-bar ul li:last-child {
+        background-color: hsl(51, 100%, 49%);
+        color: black;
+    }
+    .nav-bar ul li:last-child:hover {
+        background-color: hsl(51, 100%, 49%);
+        color: black;
+    }
+    .header div h1 {
+        font-size: 35px;
+        letter-spacing: 7px;
+        margin-top: 8rem;
+    }
+    .header div:last-child {
+        position: relative;
+        z-index: 0;
+    }
+    .main-content article .eag {
+        flex-direction: column;
+    }
+    .main-content article .eag div:first-child {
+        order: 1;
+        text-align: center;
+        width: 100%;
+        padding: 4rem 1.8rem;
+    }
+    .main-content article .glass > div:last-child {
+        width: 100%;
+        padding: 4rem 1.8rem;
+    }
+    .main-content article .eag div:last-child {
+        order: 0;
+        width: 100%;
+    }
+    .main-content article .glass {
+        flex-direction: column;
+    }
+    .main-content article .glass div:first-child {
+        width: 100%;
+    }
+    .main-content article .glass div:last-child {
+        text-align: center;
+    }
+    .main-content article .glass div:last-child div {
+        margin: auto;
+    }
+    .cherries-orange {
+        flex-direction: column;
+    }
+    .cherries-orange div {
+        width: 100% !important;
+        height: 600px;
+    }
+    .parent {
+        margin: auto;
+        width: max-content !important;
+    }
+    .client-testimonials {
+        padding: 5rem 2rem;
+    }
+    .client-testimonials h2 {
+        font-size: 15px;
+    }
+    .gallery div img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 550px) {
+    .header div:last-child img {
+        margin: 3.5rem auto 0;
+    }
+    .header {
+        background-size: 185%;
+        background-repeat: no-repeat;
+        background-color: #3DBEFF;
+    }
+    .header div h1 {
+        font-size: 33px;
+        letter-spacing: 7px;
+        margin: 6rem 1.5rem 0;
+    }
+    .cherries-orange p {
+        margin: 0 1rem;
+    }
+}
+/* media query */
